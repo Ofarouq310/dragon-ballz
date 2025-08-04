@@ -30,8 +30,15 @@
 
 @layer base {
   body {
-    @apply bg-[#dfdff0] font-general overflow-x-hidden w-100dvw;
+    @apply font-general overflow-x-hidden w-100 bg-[#c9c9c9] text-[rgba(0,0,0,0.9)] text-base leading-6 tracking-normal;
   }
 
   
+}
+
+@layer utility {
+
+  .absolute-center {
+    @apply absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%];
+  }
 }
