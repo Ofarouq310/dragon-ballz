@@ -1,10 +1,19 @@
+import Header from "./components/Header"
+import Hero from "./sections/Hero"
+import About from "./sections/About"
+import Features from "./sections/Features"
 
 function App() {
 
   return (
-    <>
-      <h1 className="text-4xl text-[#ffb200] text-center">Dragon Ball Z</h1>
-    </>
+    <main className="relative min-h-screen w-screen overflow-x-hidden">
+      <Header />
+      <Hero />
+      <About />
+      {/* <section className="w-full min-h-screen" /> */}
+      <Features />
+
+    </main>
   )
 }
 
