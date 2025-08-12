@@ -12,6 +12,8 @@
   import gsap from 'gsap';
   import { useGSAP } from '@gsap/react';
   import { useState } from 'react';
+  import { ScrollTrigger } from "gsap/all";
+  gsap.registerPlugin(ScrollTrigger);
 
 
   export default function Hero() {
@@ -48,16 +50,34 @@
       }
     );
 
+    useGSAP(()=>{
+      gsap.set("#hero", {
+        clipPath: "polygon(14% 0, 72% 0, 88% 90%, 0 95%)",
+        borderRadius: "0% 0% 40% 10%"
+      });
+      
+      gsap.from("#hero", {
+       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+      borderRadius: "0% 0% 0% 0%",
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: "#hero",
+          start: "center center",
+          end: "bottom center",
+          scrub: true
+        }
+      });
+    })
+
     const handleVideoClick = () => {
       const nextIndex = (videoIndex + 1) % videos.length;
       setVideoIndex(nextIndex);
       setIsClicked(true);
-
     };
 
     return (
       <div className="relative w-dvw h-dvh overflow-hidden">
-        <div className="relative w-full h-full">
+        <div className="relative w-full h-full z-50" id="hero">
           <div className="relative w-full h-full">
             <div className="absolute top-0 left-0 size-64 z-40 w-full h-full overflow-hidden">
               <div
@@ -96,10 +116,9 @@
               loop
             />
           
-        </div>
 
         <div className="absolute top-0 left-0 z-40 mt-24 px-10 w-full h-full pointer-events-none flex flex-col gap-3">
-          <h1 className="special-font flex items-center uppercase font-zentry text-white font-black lg:text-[12rem] text-7xl sm:text-9xl leading-none">
+          <h1 className="special-font flex items-center uppercase font-zentry lg:text-[12rem] text-7xl sm:text-9xl">
             dr<b>a</b>g
             <img src={oneStar} alt="One Star Dragon Ball" className="inline-block lg:w-37 w-15 sm:w-26" />
             n
@@ -112,10 +131,17 @@
         </div>
 
         <div className="absolute bottom-0 right-0 z-40 mb-5 px-10">
-          <h1 className="special-font uppercase font-zentry text-white font-black lg:text-[12rem] text-7xl sm:text-9xl leading-none">
+          <h1 className="special-font uppercase font-zentry z-40 lg:text-[12rem] text-7xl sm:text-9xl">
             b<b>a</b>ll
           </h1>
         </div>
+
+        </div>
+      
+        <h1 className="special-font z-0 uppercase font-zentry font-black lg:text-[12rem] mb-5 px-10 text-7xl sm:text-9xl leading-none
+        absolute bottom-0 right-0 text-black">
+            b<b>a</b>ll
+        </h1>
       </div>
     );
   };
