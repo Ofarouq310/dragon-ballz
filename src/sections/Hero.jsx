@@ -38,7 +38,7 @@
           gsap.from("#current-video", {
             transformOrigin: "center center",
             scale: 0,
-            duration: 0.5 ,
+            duration: 1.5,
             ease: "power2.inOut",
           });
           gsap.set("#bkg-video", {opacity: 0.5});
