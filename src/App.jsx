@@ -10,7 +10,6 @@ function App() {
       <Header />
       <Hero />
       <About />
-      {/* <section className="w-full min-h-screen" /> */}
       <Features />
 
     </main>
