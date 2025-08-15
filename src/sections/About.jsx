@@ -18,7 +18,7 @@ export default function About() {
       },
     });
 
-    clipAnimation.to("#heros-image", {
+    clipAnimation.to("#heroes-image", {
       width: "100vw",
       height: "100vh",
       borderRadius: 0,
@@ -42,7 +42,7 @@ export default function About() {
         </div>
         
             <div className='w-screen h-dvh flex justify-center' id="clip">
-              <div className="absolute top-0 z-10 w-96 h-[50vh] sm:h-[60vh] md:w-[30vw] overflow-hidden rounded-3xl shadow-lg" id='heros-image'>
+              <div className="absolute top-0 z-10 w-96 h-[50vh] sm:h-[60vh] md:w-[30vw] overflow-hidden rounded-3xl shadow-lg" id='heroes-image'>
                   <img className='object-cover w-full h-full origin-center sm:object-[80%]' src={heros} alt="Heros"></img>
               </div>  
             </div>
