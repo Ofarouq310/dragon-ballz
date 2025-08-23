@@ -11,8 +11,8 @@
   import oneStar from '../assets/imgs/z-ball.png';
   import gsap from 'gsap';
   import { useGSAP } from '@gsap/react';
-  import { useState } from 'react';
   import { ScrollTrigger } from "gsap/all";
+  import { useState } from 'react';
   gsap.registerPlugin(ScrollTrigger);
 
 
@@ -127,7 +127,7 @@
             Enter the world of Dragon Ball Z,<br /> where epic battles and legendary heroes come to life.
           </p>
          
-          <Button title="Join the Adventure" image={threeStar} />
+          <Button title="Join the Adventure" image={threeStar} containerClass={' bg-violet-50 text-black'} />
         </div>
 
         <div className="absolute bottom-0 right-0 z-40 mb-5 px-10">
