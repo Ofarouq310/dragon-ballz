@@ -56,13 +56,17 @@
     hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer;
   }
 
-  .clip-parallelogram {
-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); 
- }
+  .card-title {
+    @apply uppercase md:text-6xl text-2xl sm:text-4xl font-zentry tracking-wider font-light;
+  }
 
- .card-title {
-   @apply uppercase md:text-6xl text-4xl font-black font-zentry;
- }
-
+  .border-hsla {
+    @apply border border-white/20;
+  }
+  
+  .video-mask {
+   -webkit-mask-image: linear-gradient(to right, transparent 25%, black 75%);
+    mask-image: linear-gradient(to right, transparent 25%, black 75%);
+}
 
 }
