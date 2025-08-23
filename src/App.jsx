@@ -2,6 +2,9 @@ import Header from "./components/Header"
 import Hero from "./sections/Hero"
 import About from "./sections/About"
 import Features from "./sections/Features"
+import Story from "./sections/Story"
+import Glance from "./sections/Glance"
+
 
 function App() {
 
@@ -10,9 +13,9 @@ function App() {
       <Header />
       <Hero />
       <About />
-      {/* <section className="w-full min-h-screen" /> */}
       <Features />
-
+      <Story />
+      <Glance />
     </main>
   )
 }

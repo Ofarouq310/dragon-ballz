@@ -17,7 +17,7 @@ export default function Header() {
         <div className='flex items-center gap-5 text-white bg-transparent'>
             <img src={gokuLogo} alt="Dragon Ball Z Logo" className="w-12" />
             <Buttom title="Games" image={threeStar}
-            containerClass = "flex flex-row-reverse"
+            containerClass = "flex flex-row-reverse bg-violet-50 text-black"
             />
         </div>
         <nav className='md:block hidden'>
