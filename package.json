@@ -13,8 +13,10 @@
     "@gsap/react": "^2.1.2",
     "@tailwindcss/vite": "^4.1.11",
     "clsx": "^2.1.1",
+    "gsap": "^3.13.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-parallax-tilt": "^1.7.304",
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
