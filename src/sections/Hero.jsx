@@ -30,7 +30,7 @@
             transformOrigin: "center center",
             scale: 1,
             width: "100%",
-            height: "85%",
+            height: "100%",
             borderRadius: "0%",
             duration: 1,
             ease: "power1.inOut",
