@@ -104,7 +104,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser to view the 
 
 ## <a name="links">🔗 Links</a>
 
-A live project link is [here](https://nike-clone-ruddy-nu.vercel.app/)
+A live project link is [here]()
 
 ## <a name="more">🚀 More</a>
 
