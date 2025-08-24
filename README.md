@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     <a href="https://youtu.be/QRrPE9aj3wI?feature=shared" target="_blank">
-      <img src="https://github.com/Ofarouq310/nike-clone/blob/main/src/assets/images/nike-clone-banner.png" alt="Project Banner" width="700">
+      <img src="https://github.com/Ofarouq310/dragon-ballz/blob/ui-enhancements-readme/src/assets/imgs/freepik-dragon-ballz-20250824182933k2rR.jpeg" alt="Project Banner" width="700">
     </a>
   <br />
 
