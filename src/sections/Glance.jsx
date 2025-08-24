@@ -46,6 +46,7 @@ export default function Glance() {
   return (
     <section className="min-h-screen bg-black" id='heroes'>
         <div className="container mx-auto w-full flex flex-col">
+
             <div className="py-32 text-blue-50 text-lg text-center flex flex-col justify-start items-center">
                 <h2 className="font-zentry uppercase text-center md:text-[6rem] text-4xl special-font mb-5">
                     h<b>e</b>r<b>oe</b>s at <b>a</b> <b>g</b>lan<b>ce</b>
@@ -74,12 +75,13 @@ export default function Glance() {
                     
                 </div>
 
-                <p className="md:max-w-[50vw] text-base font-circularweb text-center text-violet-50 mt-15 sm:mt-20">
+                <p className="md:max-w-[50vw] p-3 text-base font-circularweb text-center text-violet-50 mt-15 sm:mt-20">
                   Join the heroes of Dragon Ball Z as they embark on epic adventures, face formidable foes, and push their limits to protect the universe from impending threats.
                 </p>
+                
             </div>
+
         </div>
-        <div className='min-h-dvh bg-black'></div>
     </section>
   )
 }
