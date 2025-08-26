@@ -1,1 +1,123 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: circularweb;
+  src: url("assets/fonts/circularweb-book.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: general;
+  src: url("assets/fonts/general.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: robert-medium;
+  src: url("assets/fonts/robert-medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: robert-regular;
+  src: url("assets/fonts/robert-regular.woff2") format("woff2");
+}
+
+ @font-face {
+   font-family: "zentry";
+   src: url("assets/fonts/zentry-regular.woff2") format("woff2");
+ }
+
+@theme {
+  --font-circularweb: circularweb, sans-serif;
+  --font-general: general, sans-serif;
+  --font-robert-medium: robert-medium, sans-serif;
+  --font-robert-regular: robert-regular, sans-serif;
+  --font-zentry: zentry, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-general overflow-x-hidden w-dvw bg-violet-100 text-violet-50 text-base leading-6 tracking-normal scroll-smooth;
+  }  
+}
+
+@layer utility {
+  .absolute-center {
+    @apply absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%];
+  }
+
+  .special-font b {
+    font-family: "Zentry";
+    font-feature-settings: "ss01" on;
+  }
+
+  .floating-nav {
+    @apply bg-black rounded-lg;
+  }
+
+  .nav-hover-btn {
+    @apply relative ms-10 font-general text-xs uppercase text-violet-50
+    after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0
+    after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)]
+    hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer;
+  }
+
+  .card-title {
+    @apply uppercase md:text-6xl text-2xl sm:text-4xl font-zentry tracking-wider font-light;
+  }
+
+  .border-hsla {
+    @apply border border-white/20;
+  }
+  
+  .video-mask {
+   -webkit-mask-image: linear-gradient(to right, transparent 25%, black 75%);
+    mask-image: linear-gradient(to right, transparent 25%, black 75%);
+}
+
+}
+
+.three-body {
+  --uib-size: 35px;
+  --uib-speed: 0.8s;
+  --uib-color: #5d3fd3;
+  position: relative;
+  display: inline-block;
+  height: var(--uib-size);
+  width: var(--uib-size);
+  animation: spin78236 calc(var(--uib-speed) * 2.5) infinite linear;
+}
+
+@keyframes spin78236 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wobble1 {
+  0%,
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-66%) scale(0.65);
+    opacity: 0.8;
+  }
+}
+
+@keyframes wobble2 {
+  0%,
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(66%) scale(0.65);
+    opacity: 0.8;
+  }
+}
