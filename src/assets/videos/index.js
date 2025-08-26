@@ -7,7 +7,7 @@ import kakarot from './kakarot.mp4'
 import sparkingZero from './sparkingzero.mp4'
 import superHeroes from './superheroes.mp4'
 import xenoverse from './xenoverse.mp4'
-import fighterZ from './fighterZ.mp4'
+import fighterZ from './fighterz.mp4'
 
 
 export {
