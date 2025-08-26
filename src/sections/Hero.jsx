@@ -152,7 +152,7 @@ useEffect(() => {
             <img src={oneStar} alt="One Star Dragon Ball" className="inline-block lg:w-37 w-15 sm:w-26" />
             n
           </h1>
-          <p className="text-blue-100 text-md font-regular max-w-100 mb-5 font-robert-regular">
+          <p className="text-white text-md font-regular max-w-100 mb-5 font-robert-regular">
             Enter the world of Dragon Ball Z,<br /> where epic battles and legendary heroes come to life.
           </p>
          
