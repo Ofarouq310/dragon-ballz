@@ -3,7 +3,7 @@ import dragonBall from '../assets/imgs/z-ball.png';
 export default function Contact() {
   return (
     <section className= "w-screen min-h-96 px-10 mb-10 md:mt-32 mt-5 " id='contact'>
-      <div className="bg-black overflow-hidden text-blue-50 py-24 rounded-lg relative bg-[url('src/assets/imgs/vegeta1.jpg')] bg-[132%_66%] bg-no-repeat bg-contain sm:bg-size-[50vw]">
+      <div className="bg-black overflow-hidden text-blue-50 py-24 rounded-lg relative bg-[url('public/vegeta1.jpg')] bg-[132%_66%] bg-no-repeat bg-contain sm:bg-size-[50vw]">
         <div className="flex z-10 flex-col justify-center items-center text-center px-5">
             <h4 className="text-[12px] uppercase">Dragon Ball Z</h4>
             <p className="font-zentry uppercase text-center md:text-[6rem] leading-[.8] text-4xl special-font mt-10 max-w-md md:max-w-[41.5rem] special-font">
